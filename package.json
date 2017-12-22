@@ -1,0 +1,24 @@
+{
+  "name": "dream-defer-server",
+  "version": "0.0.1",
+  "description": "server to connect to database for dream defer timer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josuerojasrojas/Dream-Defer-Server.git"
+  },
+  "author": "josue rojas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josuerojasrojas/Dream-Defer-Server/issues"
+  },
+  "homepage": "https://github.com/josuerojasrojas/Dream-Defer-Server#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "pg": "^7.4.0"
+  }
+}
