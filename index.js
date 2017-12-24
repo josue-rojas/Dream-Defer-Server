@@ -46,7 +46,7 @@ app.post('/new', (req, res) =>{
 })
 
 app.post(secretURL + '/:id', (req, res) =>{
-  pool.query('UPDATE dreams SET fullname=$1, dateend=$2, inst=$3, hexcolor=$4 WHERE id=' + req.params.id, [req.body.fullname, req.body.dateend, req.body.insta, req.body.hexcolor])
+  pool.query('UPDATE dreams SET fullname=$1, dateend=$2, instas=$3, hexcolor=$4 WHERE id=' + req.params.id, [req.body.fullname, req.body.dateend, req.body.insta, req.body.hexcolor])
   .then( ()=>{
     res.end('{success : "Updated Successfully", "status" : 200}');
   })
